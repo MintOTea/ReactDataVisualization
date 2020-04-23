@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import echarts from "echarts/lib/echarts"
-import "echarts/lib/chart/bar"
+import "echarts/lib/chart/boxplot"
 
-function Bar (props){
+function Boxplot (props){
     // const lineData = props.lineData;
     const lineData = props.data;
     const randomA = parseFloat(Math.random()*1000,10)+1
@@ -17,4 +17,4 @@ function Bar (props){
           <div id={name} style={{width:"100%",height:"100%"}}></div>
       );
 }
-export default Bar
+export default Boxplot

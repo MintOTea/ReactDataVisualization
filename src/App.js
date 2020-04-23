@@ -1,15 +1,16 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Bar from "./component/bar";
+import {Line} from "component"
+import {monthSale} from "data/monthSale"
+import {monthQuality} from "data/monthQuality"
 
 function App() {
+    
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Bar/>
-      </header>
+      <div><Line data={monthSale} /></div>
+      <div><Line data={monthQuality} /></div>
     </div>
   );
 }
