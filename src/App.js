@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import { Line } from "component";
 import { monthSale } from "data/monthSale";

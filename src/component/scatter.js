@@ -12,7 +12,7 @@ function Scatter(props) {
     var myChart = echarts.init(document.getElementById(name));
     // 绘制图表
     myChart.setOption(lineData);
-  }, [lineData, props.key]);
+  }, [lineData, name]);
   return <div id={name} style={{ width: "100%", height: "100%" }}></div>;
 }
 export default Scatter;
