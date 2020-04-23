@@ -2,6 +2,8 @@
   "name": "h5datavision",
   "version": "0.1.0",
   "private": true,
+  "main": "main.js",
+  "homepage": ".",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -18,10 +20,10 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "ele-build-pc-x86": "node scripts/build.js && electron-packager ./ --arch=ia32 --asar --icon=./public/favicon.ico --overwrite --download.mirrorOptions.mirror='https://npm.taobao.org/mirrors/electron/' --download.mirrorOptions.customDir='8.2.0' --ignore=node_modules --ignore=src --ignore=config --ignore=.git --ignore=.gitee --ignore=document --ignore=scripts --ignore=.vscode --ignore=public --ignore=electron-zip",
-    "ele-build-pc-x64": "node scripts/build.js && electron-packager ./ --arch=x64 --asar --icon=./public/favicon.ico --overwrite --download.mirrorOptions.mirror='https://npm.taobao.org/mirrors/electron/' --download.mirrorOptions.customDir='8.2.0' --ignore=node_modules --ignore=src --ignore=config --ignore=.git --ignore=.gitee --ignore=document --ignore=scripts --ignore=.vscode --ignore=public --ignore=electron-zip",
-    "ele-build-linux-x86": "node scripts/build.js && electron-packager ./ --platform=linux --arch=ia32 --asar --icon=./public/favicon.ico --overwrite --download.mirrorOptions.mirror='https://npm.taobao.org/mirrors/electron/' --download.mirrorOptions.customDir='8.2.0' --ignore=node_modules --ignore=src --ignore=config --ignore=.git --ignore=.gitee --ignore=document --ignore=scripts --ignore=.vscode --ignore=public --ignore=electron-zip",
-    "ele-build-linux-arm64": "node scripts/build.js && electron-packager ./ --platform=linux --arch=arm64 --asar --icon=./public/favicon.ico --overwrite --download.mirrorOptions.mirror='https://npm.taobao.org/mirrors/electron/' --download.mirrorOptions.customDir='8.2.0' --ignore=node_modules --ignore=src --ignore=config --ignore=.git --ignore=.gitee --ignore=document --ignore=scripts --ignore=.vscode --ignore=public --ignore=electron-zip",
+    "ele-build-pc-x86": "react-scripts build && electron-packager ./ --arch=ia32 --asar --icon=./public/favicon.ico --overwrite --download.mirrorOptions.mirror='https://npm.taobao.org/mirrors/electron/' --download.mirrorOptions.customDir='8.2.3' --ignore=node_modules --ignore=src --ignore=config --ignore=.git --ignore=.gitee --ignore=document --ignore=scripts --ignore=.vscode --ignore=public --ignore=electron-zip",
+    "ele-build-pc-x64": "react-scripts build && electron-packager ./ --arch=x64 --asar --icon=./public/favicon.ico --overwrite --download.mirrorOptions.mirror='https://npm.taobao.org/mirrors/electron/' --download.mirrorOptions.customDir='8.2.3' --ignore=node_modules --ignore=src --ignore=config --ignore=.git --ignore=.gitee --ignore=document --ignore=scripts --ignore=.vscode --ignore=public --ignore=electron-zip",
+    "ele-build-linux-x86": "react-scripts build && electron-packager ./ --platform=linux --arch=ia32 --asar --icon=./public/favicon.ico --overwrite --download.mirrorOptions.mirror='https://npm.taobao.org/mirrors/electron/' --download.mirrorOptions.customDir='8.2.3' --ignore=node_modules --ignore=src --ignore=config --ignore=.git --ignore=.gitee --ignore=document --ignore=scripts --ignore=.vscode --ignore=public --ignore=electron-zip",
+    "ele-build-linux-arm64": "react-scripts build && electron-packager ./ --platform=linux --arch=arm64 --asar --icon=./public/favicon.ico --overwrite --download.mirrorOptions.mirror='https://npm.taobao.org/mirrors/electron/' --download.mirrorOptions.customDir='8.2.3' --ignore=node_modules --ignore=src --ignore=config --ignore=.git --ignore=.gitee --ignore=document --ignore=scripts --ignore=.vscode --ignore=public --ignore=electron-zip",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

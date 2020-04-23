@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import echarts from "echarts/lib/echarts"
+import echarts from "echarts"
 import "echarts/lib/chart/line"
 
 function Line (props){
@@ -11,7 +11,7 @@ function Line (props){
         // 基于准备好的dom，初始化echarts实例
         var myChart = echarts.init(document.getElementById(name));
         // 绘制图表
-        myChart.setOption(lineData);
+        myChart.setOption(lineData,true);
       },[lineData,props.key]);
       return (
           <div id={name} style={{width:"100%",height:"100%"}}></div>
