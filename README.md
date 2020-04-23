@@ -6,7 +6,7 @@
 
 ### 当前已应用
 
-NodeJs，React，Echarts,Electron
+NodeJs，React，Echarts， Electron
 
 ## 使用
 
@@ -74,3 +74,5 @@ NodeJs，React，Echarts,Electron
 4. 在 App.js 的`<div>`标签中插入 Line 组件，并引用导出的选项`<Line data={example}/>`
 
 运行即可。
+
+具体的选项如何写，请参照Echarts[官方实例](https://echarts.apache.org/examples/zh/index.html)。

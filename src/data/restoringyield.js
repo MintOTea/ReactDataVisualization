@@ -1,7 +1,14 @@
 export const restoringYield = {
-  title: {
-    text: "折线图堆叠",
-  },
+    title: {
+        text: "还原良率",
+        textStyle: {
+          align: "center",
+          color: "#FFFFFF",
+          fontSize: 20,
+        },
+        top: "5%",
+        left: "center",
+      },
   tooltip: {
     trigger: "axis",
   },

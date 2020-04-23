@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { Row, Col, Button } from "antd";
+import { Row, Col } from "antd";
 import { Line, Bar } from "component";
 import { monthSale } from "data/monthSale";
 import { monthQuality } from "data/monthQuality";

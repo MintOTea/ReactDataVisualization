@@ -1,4 +1,14 @@
 export const AbnormalProblem = {
+  title: {
+    text: "未处理异常",
+    textStyle: {
+      align: "center",
+      color: "#FFFFFF",
+      fontSize: 20,
+    },
+    top: "5%",
+    left: "center",
+  },
   tooltip: {
     trigger: "item",
     formatter: "{a} <br/>{b}: {c} ({d}%)",

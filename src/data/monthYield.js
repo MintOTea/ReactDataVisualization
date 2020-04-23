@@ -1,5 +1,15 @@
 export const monthYield = {
   color: ["#003366", "#006699", "#4cabce", "#e5323e"],
+  title: {
+    text: "月度产量",
+    textStyle: {
+      align: "center",
+      color: "#FFFFFF",
+      fontSize: 20,
+    },
+    top: "5%",
+    left: "center",
+  },
   tooltip: {
     trigger: "axis",
     axisPointer: {
@@ -8,19 +18,6 @@ export const monthYield = {
   },
   legend: {
     data: ["Forest", "Steppe", "Desert", "Wetland"],
-  },
-  toolbox: {
-    show: true,
-    orient: "vertical",
-    left: "right",
-    top: "center",
-    feature: {
-      mark: { show: true },
-      dataView: { show: true, readOnly: false },
-      magicType: { show: true, type: ["line", "bar", "stack", "tiled"] },
-      restore: { show: true },
-      saveAsImage: { show: true },
-    },
   },
   xAxis: [
     {

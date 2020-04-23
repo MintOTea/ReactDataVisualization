@@ -2,7 +2,7 @@ import echarts from "echarts/lib/echarts";
 export const monthQuality = {
   backgroundColor: "#080b30",
   title: {
-    text: "sdasd",
+    text: "后处理总收率",
     textStyle: {
       align: "center",
       color: "#FFFFFF",

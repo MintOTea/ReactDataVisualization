@@ -11,7 +11,16 @@ const data3 = takeData();
 const data4 = takeData();
 export const monthSale = {
   color: ["#5793f3", "#d14a61", "#675bba"],
-
+  title: {
+    text: "月度销量",
+    textStyle: {
+      align: "center",
+      color: "#FFFFFF",
+      fontSize: 20,
+    },
+    top: "5%",
+    left: "center",
+  },
   tooltip: {
     trigger: "none",
     axisPointer: {

@@ -1,4 +1,14 @@
 export const malfunction = {
+  title: {
+    text: "设备故障",
+    textStyle: {
+      align: "center",
+      color: "#FFFFFF",
+      fontSize: 20,
+    },
+    top: "5%",
+    left: "center",
+  },
   dataset: {
     source: [
       ["score", "amount", "product"],
