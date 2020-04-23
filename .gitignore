@@ -1,0 +1,10 @@
+.vscode/*
+yarn.lock
+node_modules/
+build/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.VSCodeCounter
+H5*

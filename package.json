@@ -1,0 +1,43 @@
+{
+  "name": "h5datavision",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "echarts": "^4.7.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1"
+  },
+  "devDependencies": {
+    "electron": "^8.2.0",
+    "electron-packager": "^14.2.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "ele-build-pc-x86": "node scripts/build.js && electron-packager ./ --arch=ia32 --asar --icon=./public/favicon.ico --overwrite --download.mirrorOptions.mirror='https://npm.taobao.org/mirrors/electron/' --download.mirrorOptions.customDir='8.2.0' --ignore=node_modules --ignore=src --ignore=config --ignore=.git --ignore=.gitee --ignore=document --ignore=scripts --ignore=.vscode --ignore=public --ignore=electron-zip",
+    "ele-build-pc-x64": "node scripts/build.js && electron-packager ./ --arch=x64 --asar --icon=./public/favicon.ico --overwrite --download.mirrorOptions.mirror='https://npm.taobao.org/mirrors/electron/' --download.mirrorOptions.customDir='8.2.0' --ignore=node_modules --ignore=src --ignore=config --ignore=.git --ignore=.gitee --ignore=document --ignore=scripts --ignore=.vscode --ignore=public --ignore=electron-zip",
+    "ele-build-linux-x86": "node scripts/build.js && electron-packager ./ --platform=linux --arch=ia32 --asar --icon=./public/favicon.ico --overwrite --download.mirrorOptions.mirror='https://npm.taobao.org/mirrors/electron/' --download.mirrorOptions.customDir='8.2.0' --ignore=node_modules --ignore=src --ignore=config --ignore=.git --ignore=.gitee --ignore=document --ignore=scripts --ignore=.vscode --ignore=public --ignore=electron-zip",
+    "ele-build-linux-arm64": "node scripts/build.js && electron-packager ./ --platform=linux --arch=arm64 --asar --icon=./public/favicon.ico --overwrite --download.mirrorOptions.mirror='https://npm.taobao.org/mirrors/electron/' --download.mirrorOptions.customDir='8.2.0' --ignore=node_modules --ignore=src --ignore=config --ignore=.git --ignore=.gitee --ignore=document --ignore=scripts --ignore=.vscode --ignore=public --ignore=electron-zip",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
