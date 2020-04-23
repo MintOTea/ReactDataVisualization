@@ -1,9 +1,10 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import {Line} from "component"
-import {monthSale} from "data/monthSale"
-import {monthQuality} from "data/monthQuality"
+import {Line,Bar,Scatter} from "component";
+import {monthSale} from "data/monthSale";
+import {monthQuality} from "data/monthQuality";
+import {monthYield} from "data/monthYield";
+import {malfunction} from "data/malfunction";
 
 function App() {
     
@@ -11,6 +12,8 @@ function App() {
     <div className="App">
       <div><Line data={monthSale} /></div>
       <div><Line data={monthQuality} /></div>
+      <div><Bar data={monthYield} /></div>
+      <div><Bar data={malfunction} /></div>
     </div>
   );
 }
