@@ -1,6 +1,7 @@
 # H5 数据可视化
 
 纳博特数据可视化项目
+[更多说明](https://mintotea.github.io/ReactDataVisualization/)
 
 ## 软件架构
 
@@ -8,7 +9,7 @@
 
 NodeJs，React，Echarts,Electron
 
-### 使用
+## 使用
 
 设计分辨率：fullscreen
 
