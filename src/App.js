@@ -13,7 +13,7 @@ function App() {
         <p>月度销量</p>
         <Line data={monthSale} />
       </div>
-      <div style={{ height: "500px"}}>
+      <div style={{ height: "500px" }}>
         <p>月度质量表现</p>
         <Line data={monthQuality} />
       </div>
